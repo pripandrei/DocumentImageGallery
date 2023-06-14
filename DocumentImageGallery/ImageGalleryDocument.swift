@@ -1,5 +1,5 @@
 //
-//  Document.swift
+//  ImageGalleryDocument.swift
 //  DocumentImageGallery
 //
 //  Created by Andrei Pripa on 6/13/23.
@@ -7,7 +7,9 @@
 
 import UIKit
 
-class Document: UIDocument {
+class ImageGalleryDocument: UIDocument {
+    
+    
     
     override func contents(forType typeName: String) throws -> Any {
         // Encode your document with an instance of NSData or NSFileWrapper
@@ -16,6 +18,7 @@ class Document: UIDocument {
     
     override func load(fromContents contents: Any, ofType typeName: String?) throws {
         // Load your document from contents
+      
     }
 }
 
