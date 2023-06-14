@@ -33,6 +33,8 @@ struct ImageGallery: Codable {
         }
     }
     
+    init() {}
+    
     init?(json: Data) {
         if let newValue = try? JSONDecoder().decode(ImageGallery.self, from: json) {
             self = newValue

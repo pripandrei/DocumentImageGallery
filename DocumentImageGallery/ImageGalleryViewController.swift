@@ -10,7 +10,8 @@ import UIKit
 class ImageGalleryViewController: UIViewController {
     
 //    var imageGallery.images = GalleryDocument()
-    var imageGallery: ImageGallery?
+    var imageGallery: ImageGallery? 
+    var document: ImageGalleryDocument?
     var scaleFactor: CGFloat = 1.0
 
     @IBOutlet weak var imageGalleryCollectionView: UICollectionView! {
@@ -26,19 +27,24 @@ class ImageGalleryViewController: UIViewController {
     
     @IBAction func save(_ sender: UIBarButtonItem) {
        
-        if let jsonData = imageGallery?.json {
-            if let url = try? FileManager.default.url(
-                for: .documentDirectory,
-                in: .userDomainMask,
-                appropriateFor: nil,
-                create: true).appending(path: "Untitled_1.json") {
-                do {
-                    try jsonData.write(to: url)
-                } catch let error {
-                    print("Could not save, error: \(error)")
-                }
-            }
+        document?.imageGallery = imageGallery
+        if document?.imageGallery != nil {
+            document?.updateChangeCount(.done)
         }
+        
+//        if let jsonData = imageGallery?.json {
+//            if let url = try? FileManager.default.url(
+//                for: .documentDirectory,
+//                in: .userDomainMask,
+//                appropriateFor: nil,
+//                create: true).appending(path: "Untitled_1.json") {
+//                do {
+//                    try jsonData.write(to: url)
+//                } catch let error {
+//                    print("Could not save, error: \(error)")
+//                }
+//            }
+//        }
     }
     
     private func configureTrashButton() {
@@ -61,11 +67,18 @@ class ImageGalleryViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appending(path: "Untitled_1.json") {
-            if let jsonData = try? Data(contentsOf: url) {
-                imageGallery = ImageGallery(json: jsonData)
+        document?.open() { success in
+            if success {
+                self.title = self.document?.localizedName
+                self.imageGallery = self.document?.imageGallery
             }
         }
+        
+//        if let url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appending(path: "Untitled_1.json") {
+//            if let jsonData = try? Data(contentsOf: url) {
+//                imageGallery = ImageGallery(json: jsonData)
+//            }
+//        }
     //        imageGalleryCollectionView.reloadData()
     }
 }
