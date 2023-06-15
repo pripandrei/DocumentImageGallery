@@ -9,8 +9,7 @@ import UIKit
 
 class ImageGalleryViewController: UIViewController {
     
-//    var imageGallery.images = GalleryDocument()
-    var imageGallery: ImageGallery? 
+    var imageGallery: ImageGallery?
     var document: ImageGalleryDocument?
     var scaleFactor: CGFloat = 1.0
 
@@ -24,27 +23,16 @@ class ImageGalleryViewController: UIViewController {
         }
     }
     
-    
     @IBAction func save(_ sender: UIBarButtonItem) {
-       
+        
         document?.imageGallery = imageGallery
         if document?.imageGallery != nil {
             document?.updateChangeCount(.done)
         }
         
-//        if let jsonData = imageGallery?.json {
-//            if let url = try? FileManager.default.url(
-//                for: .documentDirectory,
-//                in: .userDomainMask,
-//                appropriateFor: nil,
-//                create: true).appending(path: "Untitled_1.json") {
-//                do {
-//                    try jsonData.write(to: url)
-//                } catch let error {
-//                    print("Could not save, error: \(error)")
-//                }
-//            }
-//        }
+        dismiss(animated: true) {
+            self.document?.close()
+        }
     }
     
     private func configureTrashButton() {
@@ -70,16 +58,18 @@ class ImageGalleryViewController: UIViewController {
         document?.open() { success in
             if success {
                 self.title = self.document?.localizedName
-                self.imageGallery = self.document?.imageGallery
+                
+                guard let imageGallery = self.document?.imageGallery else {
+                    self.imageGallery = ImageGallery()
+                    return
+                }
+                
+                //                if self.document?.imageGallery == nil {
+                //                    self.imageGallery = ImageGallery()
+                //                }
+                self.imageGallery = imageGallery
             }
         }
-        
-//        if let url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appending(path: "Untitled_1.json") {
-//            if let jsonData = try? Data(contentsOf: url) {
-//                imageGallery = ImageGallery(json: jsonData)
-//            }
-//        }
-    //        imageGalleryCollectionView.reloadData()
     }
 }
 
@@ -136,8 +126,6 @@ extension ImageGalleryViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
         collectionView.deselectItem(at: indexPath, animated: true)
-//        let cell = collectionView.cellForItem(at: indexPath)
-//        performSegue(withIdentifier: "ShowImageVC", sender: cell)
     }
 }
 

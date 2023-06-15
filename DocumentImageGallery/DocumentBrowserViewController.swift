@@ -29,7 +29,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
             create: true)
         .appending(path: "Untitled_1.json")
         if template != nil {
-            allowsDocumentCreation = FileManager.default.createFile(atPath: template!.path(percentEncoded: false), contents: Data())
+            allowsDocumentCreation = FileManager.default.createFile(atPath: template!.path, contents: Data())
         }
     }
     
