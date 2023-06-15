@@ -68,6 +68,7 @@ class ImageGalleryViewController: UIViewController {
                 //                    self.imageGallery = ImageGallery()
                 //                }
                 self.imageGallery = imageGallery
+                self.imageGalleryCollectionView.reloadData()
             }
         }
     }
