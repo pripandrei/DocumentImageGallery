@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 extension ImageGalleryViewController {
     
     func addImageGalleryGestureRecognizers(to collectionView: UICollectionView) {
@@ -16,12 +15,14 @@ extension ImageGalleryViewController {
         collectionView.addGestureRecognizer(pinch)
     }
     
+    
     @objc func resizeCollectionView(by recognizer: UIPinchGestureRecognizer) {
         switch recognizer.state {
         case .changed, .ended:
             scaleFactor *= recognizer.scale
             recognizer.scale = 1.0
             imageGalleryCollectionView.collectionViewLayout.invalidateLayout()
+//            documentChange()
         default: break
         }
     }

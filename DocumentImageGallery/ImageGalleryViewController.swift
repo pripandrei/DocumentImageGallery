@@ -23,12 +23,16 @@ class ImageGalleryViewController: UIViewController {
         }
     }
     
-    @IBAction func save(_ sender: UIBarButtonItem) {
-        
+    func documentChange() {
         document?.imageGallery = imageGallery
         if document?.imageGallery != nil {
             document?.updateChangeCount(.done)
         }
+    }
+    
+    @IBAction func save(_ sender: UIBarButtonItem) {
+        
+        documentChange()
         
         dismiss(animated: true) {
             self.document?.close()
@@ -55,6 +59,8 @@ class ImageGalleryViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
+        
         document?.open() { success in
             if success {
                 self.title = self.document?.localizedName
@@ -63,14 +69,14 @@ class ImageGalleryViewController: UIViewController {
                     self.imageGallery = ImageGallery()
                     return
                 }
-                
-                //                if self.document?.imageGallery == nil {
-                //                    self.imageGallery = ImageGallery()
-                //                }
                 self.imageGallery = imageGallery
-                self.imageGalleryCollectionView.reloadData()
+                
+                DispatchQueue.main.async {
+                    self.imageGalleryCollectionView.reloadData()
+                }
             }
         }
+        
     }
 }
 
@@ -96,6 +102,7 @@ extension ImageGalleryViewController: UIDropInteractionDelegate {
                 imageGallery?.images.remove(at: indexPath.item)
                 imageGalleryCollectionView.deleteItems(at: [indexPath])
             })
+//            documentChange()
         }
     }
 }
@@ -106,6 +113,7 @@ extension ImageGalleryViewController: UIDropInteractionDelegate {
 extension ImageGalleryViewController: UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(imageGalleryCollectionView.subviews.count, "===subviews")
         return imageGallery?.images.count ?? 0
     }
     
@@ -189,6 +197,7 @@ extension ImageGalleryViewController: UICollectionViewDropDelegate {
             })
             coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
         }
+//        documentChange()
     }
     
     private func handleDropFromGlobalSource(with item: UICollectionViewDropItem,
@@ -213,23 +222,9 @@ extension ImageGalleryViewController: UICollectionViewDropDelegate {
                     placeHolder.commitInsertion(dataSourceUpdates: { insertionIndexPath in
                         self.imageGallery?.images[destinationIndexPath.item].cellURL = url
                     })
+//                    self.documentChange()
                 }
         })
-        
-//        var dropURL: URL?
-//        var dropImage: UIImage?
-//
-//        coordinator.session.loadObjects(ofClass: NSURL.self, completion: { nsurls in
-//            if let url = nsurls.first as? URL {
-//                dropURL = url
-//            }
-//        })
-//
-//        coordinator.session.loadObjects(ofClass: UIImage.self, completion: { images in
-//            if let image = images.first as? UIImage {
-//                dropImage = image
-//            }
-//        })
     }
 }
 
@@ -270,6 +265,15 @@ extension ImageGalleryViewController {
             let cell = sender as! ImageCollectionViewCell
             let imageVC = segue.destination as! ImageVC
             imageVC.galleryImage.image = cell.cellImageView.image
+            self.document?.imageGallery = imageGallery
+            self.document?.save(to: self.document!.fileURL, for: .forOverwriting) { success in
+                if success {
+                    print("Document saved successfully.")
+                } else {
+                    print("Failed to save document.")
+                }
+            }
+            
         }
     }
 }
