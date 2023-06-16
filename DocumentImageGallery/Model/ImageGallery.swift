@@ -15,8 +15,6 @@ struct ImageGallery: Codable {
         
         var cellURL: URL?
         var cellSize: CGSize?
-        var temp: CGSize?
-        var selfFirstTimeAccessed = true
         
         var cellAspectRatio: CGSize {
             get {

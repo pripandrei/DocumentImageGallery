@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate {
     
     override func viewDidLoad() {
@@ -15,30 +14,31 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         
         delegate = self
         
-        allowsDocumentCreation = true
+        allowsDocumentCreation = false
         allowsPickingMultipleItems = false
         
         // Update the style of the UIDocumentBrowserViewController
         // browserUserInterfaceStyle = .dark
         // view.tintColor = .white
-        
-        template = try? FileManager.default.url(
-            for: .applicationSupportDirectory,
-            in: .userDomainMask,
-            appropriateFor: nil,
-            create: true)
-        .appending(path: "Untitled_1.json")
-        if template != nil {
-            allowsDocumentCreation = FileManager.default.createFile(atPath: template!.path, contents: Data())
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            templateURL = try? FileManager.default.url(
+                for: .applicationSupportDirectory,
+                in: .userDomainMask,
+                appropriateFor: nil,
+                create: true)
+            .appending(path: "Untitled_1.json")
+            if templateURL != nil {
+                allowsDocumentCreation = FileManager.default.createFile(atPath: templateURL!.path(percentEncoded: false), contents: Data())
+            }
         }
     }
     
-    var template: URL?
+    var templateURL: URL?
     
     // MARK: UIDocumentBrowserViewControllerDelegate
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void) {
-        importHandler(template, .copy)
+        importHandler(templateURL, .copy)
     }
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didPickDocumentsAt documentURLs: [URL]) {

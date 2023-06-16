@@ -213,7 +213,6 @@ extension UIViewController {
             UIGraphicsEndImageContext()
             return snapshotImage
         }
-        
         UIGraphicsEndImageContext()
         return nil
     }

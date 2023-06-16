@@ -25,16 +25,14 @@ class ImageGalleryViewController: UIViewController {
     
     func documentChange() {
         document?.imageGallery = imageGallery
-        if document?.imageGallery != nil {
+        if let imageGallery = document?.imageGallery, imageGallery.images.count > 0 {
             document?.thumbnail = self.snapshot
             document?.updateChangeCount(.done)
         }
     }
     
-    
     @IBAction func save(_ sender: UIBarButtonItem) {
         documentChange()
-        
         dismiss(animated: true) {
             self.document?.close()
         }
@@ -112,7 +110,6 @@ extension ImageGalleryViewController: UIDropInteractionDelegate {
 extension ImageGalleryViewController: UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(imageGalleryCollectionView.subviews.count, "===subviews")
         return imageGallery?.images.count ?? 0
     }
     
