@@ -77,7 +77,7 @@
 				75B5C48F2A389EB100F63A5A /* Cellidentifire.swift */,
 				75B5C4942A389EB100F63A5A /* DataLoader.swift */,
 				75B5C4902A389EB100F63A5A /* ImageCollectionViewCell.swift */,
-				75B5C49D2A38BAE700F63A5A /* ImageGallery.swift */,
+				75B5C49F2A3BE78D00F63A5A /* Model */,
 				75B5C48E2A389EB100F63A5A /* ImageGalleryGestures.swift */,
 				75B5C4922A389EB100F63A5A /* ImageGalleryViewController.swift */,
 				75B5C4932A389EB100F63A5A /* ImageVC.swift */,
@@ -97,6 +97,14 @@
 				75B5C4852A389A2300F63A5A /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75B5C49F2A3BE78D00F63A5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C49D2A38BAE700F63A5A /* ImageGallery.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

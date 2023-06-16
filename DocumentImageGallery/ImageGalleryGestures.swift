@@ -22,7 +22,6 @@ extension ImageGalleryViewController {
             scaleFactor *= recognizer.scale
             recognizer.scale = 1.0
             imageGalleryCollectionView.collectionViewLayout.invalidateLayout()
-//            documentChange()
         default: break
         }
     }

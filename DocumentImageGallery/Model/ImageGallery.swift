@@ -15,11 +15,13 @@ struct ImageGallery: Codable {
         
         var cellURL: URL?
         var cellSize: CGSize?
+        var temp: CGSize?
+        var selfFirstTimeAccessed = true
         
         var cellAspectRatio: CGSize {
             get {
-                return cellSize ?? CGSize()
-            }
+                    return cellSize ?? CGSize()
+                }
             set {
                 let cellWidth = newValue.width
                 let cellHeight = newValue.height

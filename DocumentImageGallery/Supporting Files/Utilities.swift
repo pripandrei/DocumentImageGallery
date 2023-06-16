@@ -202,6 +202,21 @@ extension UIViewController {
             return self
         }
     }
+    
+    var snapshot: UIImage? {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, 0.0)
+        
+        if let context = UIGraphicsGetCurrentContext() {
+            view.layer.render(in: context)
+            let snapshotImage = UIGraphicsGetImageFromCurrentImageContext()
+            
+            UIGraphicsEndImageContext()
+            return snapshotImage
+        }
+        
+        UIGraphicsEndImageContext()
+        return nil
+    }
 }
 
 extension UIView {

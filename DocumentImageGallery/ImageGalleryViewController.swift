@@ -26,12 +26,13 @@ class ImageGalleryViewController: UIViewController {
     func documentChange() {
         document?.imageGallery = imageGallery
         if document?.imageGallery != nil {
+            document?.thumbnail = self.snapshot
             document?.updateChangeCount(.done)
         }
     }
     
+    
     @IBAction func save(_ sender: UIBarButtonItem) {
-        
         documentChange()
         
         dismiss(animated: true) {
@@ -58,8 +59,6 @@ class ImageGalleryViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
         
         document?.open() { success in
             if success {
@@ -242,6 +241,7 @@ extension ImageGalleryViewController: UICollectionViewDelegateFlowLayout
         }
 //        let cellAspectRatio = imageGallery!.images[indexPath.item].cellAspectRatio
         let scaledSize = CGSize(width: cellAspectRatio.width * scaleFactor, height: cellAspectRatio.height * scaleFactor)
+//        imageGallery?.images[indexPath.item].temp = scaledSize
         return scaledSize
     }
 }
