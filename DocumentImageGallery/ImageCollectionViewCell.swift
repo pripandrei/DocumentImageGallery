@@ -32,11 +32,13 @@ extension ImageCollectionViewCell
         
         loader.getImage(fromURL: url, complitionHandler: { [weak self] image in
 //            if let image = image {
+            DispatchQueue.main.async {
                 if self?.imageUrl == url {
                     self?.cellImageView.image = image
                     self?.spinner.isHidden = true
                     self?.spinner.stopAnimating()
                 }
+            }
 //            }
         })
     }

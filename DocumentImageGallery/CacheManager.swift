@@ -7,6 +7,10 @@
 
 import UIKit
 
+class CustomError: Error {
+    
+}
+
 struct CacheManager
 {
     let cache = URLCache.shared
@@ -21,10 +25,9 @@ struct CacheManager
             }
         } else {
             downloadImage(fromURL: url) { result in
-//                complitionHandler(downloadedImage)
                 switch result {
                 case .success(let image): complitionHandler(image)
-                case .failure(let error): print("Couldn't download image. Error: \(error)")
+                case .failure(let error): print("Couldn't download image. Error: \(error.localizedDescription.description)")
                 }
             }
         }
@@ -37,7 +40,17 @@ struct CacheManager
         
         let _dataTask = dataTask.dataTask(with: request) { data, response, error in
             
-            guard let data = data, let response = response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode < 300, let image = UIImage(data: data) else {
+            if let error = error {
+                complitionHandler(.failure(error))
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse else {
+                print("Error: HTTPURLResponse is nil")
+                return
+            }
+            
+            guard let data = data, response.statusCode >= 200 && response.statusCode < 300, let image = UIImage(data: data) else {
                 return complitionHandler(.failure(error!))
             }
             
