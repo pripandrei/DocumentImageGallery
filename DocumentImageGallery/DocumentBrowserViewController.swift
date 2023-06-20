@@ -13,7 +13,6 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         super.viewDidLoad()
         
         delegate = self
-        
         allowsDocumentCreation = false
         allowsPickingMultipleItems = false
         

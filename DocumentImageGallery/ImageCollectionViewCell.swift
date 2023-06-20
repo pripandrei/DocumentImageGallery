@@ -13,7 +13,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     var imageUrl: URL? { didSet { setImage() } }
     
-//    var loader = ImageLoader()
+    var loader = CacheManager()
 
 //    override func draw(_ rect: CGRect) {
 //        backgroundImageOfCell?.draw(in: bounds)
@@ -30,14 +30,14 @@ extension ImageCollectionViewCell
         self.spinner.isHidden = false
         self.spinner.startAnimating()
         
-        ImageLoader.fetch(url, complitionHandler: { [weak self] image in
-            if let image = image {
+        loader.getImage(fromURL: url, complitionHandler: { [weak self] image in
+//            if let image = image {
                 if self?.imageUrl == url {
                     self?.cellImageView.image = image
                     self?.spinner.isHidden = true
                     self?.spinner.stopAnimating()
                 }
-            }
+//            }
         })
     }
 }
