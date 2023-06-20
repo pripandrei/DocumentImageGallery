@@ -20,26 +20,30 @@ struct CacheManager
                 complitionHandler(imageFromCache)
             }
         } else {
-            downloadImage(fromURL: url) { downloadedImage in
-                complitionHandler(downloadedImage)
+            downloadImage(fromURL: url) { result in
+//                complitionHandler(downloadedImage)
+                switch result {
+                case .success(let image): complitionHandler(image)
+                case .failure(let error): print("Couldn't download image. Error: \(error)")
+                }
             }
         }
     }
     
-    func downloadImage(fromURL url: URL, complitionHandler: @escaping (UIImage) -> Void)
+    func downloadImage(fromURL url: URL, complitionHandler: @escaping (Result<UIImage,Error>) -> Void)
     {
         let dataTask = URLSession.shared
         let request = URLRequest(url: url)
         
-        let _dataTask = dataTask.dataTask(with: request) { data, response, _ in
-            if let data = data, let response = response {
-                let cacheData = CachedURLResponse(response: response, data: data)
-                self.cache.storeCachedResponse(cacheData, for: request)
-                
-                if let image = UIImage(data: data) {
-                    complitionHandler(image)
-                }
+        let _dataTask = dataTask.dataTask(with: request) { data, response, error in
+            
+            guard let data = data, let response = response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode < 300, let image = UIImage(data: data) else {
+                return complitionHandler(.failure(error!))
             }
+            
+            let cacheData = CachedURLResponse(response: response, data: data)
+            self.cache.storeCachedResponse(cacheData, for: request)
+            complitionHandler(.success(image))
         }
         _dataTask.resume()
     }
