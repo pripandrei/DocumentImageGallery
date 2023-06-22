@@ -14,10 +14,6 @@ class ImageCollectionViewCell: UICollectionViewCell {
     var imageUrl: URL? { didSet { setImage() } }
     
     var loader = CacheManager()
-
-//    override func draw(_ rect: CGRect) {
-//        backgroundImageOfCell?.draw(in: bounds)
-//    }
 }
 
 extension ImageCollectionViewCell
@@ -31,7 +27,6 @@ extension ImageCollectionViewCell
         self.spinner.startAnimating()
         
         loader.getImage(fromURL: url, complitionHandler: { [weak self] image in
-//            if let image = image {
             DispatchQueue.main.async {
                 if self?.imageUrl == url {
                     self?.cellImageView.image = image
@@ -39,7 +34,6 @@ extension ImageCollectionViewCell
                     self?.spinner.stopAnimating()
                 }
             }
-//            }
         })
     }
 }

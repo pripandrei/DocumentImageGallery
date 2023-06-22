@@ -39,7 +39,6 @@ struct ImageGallery: Codable {
         if let newValue = try? JSONDecoder().decode(ImageGallery.self, from: json) {
             self = newValue
         } else {
-//            self = ImageGallery()
             return nil
         }
     }

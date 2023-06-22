@@ -72,15 +72,10 @@
 		75B5C4772A389A2300F63A5A /* DocumentImageGallery */ = {
 			isa = PBXGroup;
 			children = (
-				75B5C47A2A389A2300F63A5A /* DocumentBrowserViewController.swift */,
-				75B5C47E2A389A2300F63A5A /* ImageGalleryDocument.swift */,
-				75B5C48F2A389EB100F63A5A /* Cellidentifire.swift */,
-				75B5C4942A389EB100F63A5A /* CacheManager.swift */,
-				75B5C4902A389EB100F63A5A /* ImageCollectionViewCell.swift */,
+				75B5C4AB2A448DE600F63A5A /* Views */,
+				75B5C4AA2A448D5300F63A5A /* Utilities */,
 				75B5C49F2A3BE78D00F63A5A /* Model */,
-				75B5C48E2A389EB100F63A5A /* ImageGalleryGestures.swift */,
-				75B5C4922A389EB100F63A5A /* ImageGalleryViewController.swift */,
-				75B5C4932A389EB100F63A5A /* ImageVC.swift */,
+				75B5C4A22A44868C00F63A5A /* Controllers */,
 				75B5C4802A389A2300F63A5A /* Main.storyboard */,
 				75B5C49C2A38AF5200F63A5A /* Supporting Files */,
 				75B5C4882A389A2300F63A5A /* Info.plist */,
@@ -102,9 +97,111 @@
 		75B5C49F2A3BE78D00F63A5A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				75B5C49D2A38BAE700F63A5A /* ImageGallery.swift */,
+				75B5C4A92A448CEF00F63A5A /* ImageGallery */,
+				75B5C4A82A448A4300F63A5A /* Document */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		75B5C4A02A44862600F63A5A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C4942A389EB100F63A5A /* CacheManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		75B5C4A12A44867500F63A5A /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C48E2A389EB100F63A5A /* ImageGalleryGestures.swift */,
+			);
+			name = Gestures;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		75B5C4A22A44868C00F63A5A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C4A62A44876B00F63A5A /* DocumentControllers */,
+				75B5C4A52A44875200F63A5A /* ImageControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		75B5C4A32A4486F900F63A5A /* Identifires */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C4A42A44871200F63A5A /* CellIdentifires */,
+			);
+			path = Identifires;
+			sourceTree = "<group>";
+		};
+		75B5C4A42A44871200F63A5A /* CellIdentifires */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C48F2A389EB100F63A5A /* Cellidentifire.swift */,
+			);
+			path = CellIdentifires;
+			sourceTree = "<group>";
+		};
+		75B5C4A52A44875200F63A5A /* ImageControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C4922A389EB100F63A5A /* ImageGalleryViewController.swift */,
+				75B5C4932A389EB100F63A5A /* ImageVC.swift */,
+			);
+			name = ImageControllers;
+			sourceTree = "<group>";
+		};
+		75B5C4A62A44876B00F63A5A /* DocumentControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C47A2A389A2300F63A5A /* DocumentBrowserViewController.swift */,
+			);
+			name = DocumentControllers;
+			sourceTree = "<group>";
+		};
+		75B5C4A82A448A4300F63A5A /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C47E2A389A2300F63A5A /* ImageGalleryDocument.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		75B5C4A92A448CEF00F63A5A /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C49D2A38BAE700F63A5A /* ImageGallery.swift */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		75B5C4AA2A448D5300F63A5A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C4A32A4486F900F63A5A /* Identifires */,
+				75B5C4A12A44867500F63A5A /* Gestures */,
+				75B5C4A02A44862600F63A5A /* Manager */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		75B5C4AB2A448DE600F63A5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C4AC2A448E3300F63A5A /* ImageCollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75B5C4AC2A448E3300F63A5A /* ImageCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				75B5C4902A389EB100F63A5A /* ImageCollectionViewCell.swift */,
+			);
+			path = ImageCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
