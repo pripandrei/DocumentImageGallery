@@ -7,10 +7,6 @@
 
 import UIKit
 
-class CustomError: Error {
-    
-}
-
 struct CacheManager
 {
     let cache = URLCache.shared
@@ -44,7 +40,7 @@ struct CacheManager
                 complitionHandler(.failure(error))
                 return
             }
-            
+
             guard let response = response as? HTTPURLResponse else {
                 print("Error: HTTPURLResponse is nil")
                 return
@@ -75,7 +71,7 @@ struct CacheManager
 
 
 
-// - Light version
+// - Light version, without cache
 
 //struct ImageLoader
 //{
