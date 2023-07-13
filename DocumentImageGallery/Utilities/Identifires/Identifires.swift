@@ -7,22 +7,24 @@
 
 import Foundation
 
-protocol ReusableCell {
+protocol Reusable {
     static var identifire: String { get }
 }
 
 // MARK: - Identifires for reusable cells
 
-class ImageCollectionViewCellPlaceholder: ReusableCell {}
+class ImageCollectionViewCellPlaceholder: Reusable {}
 
-class TextEditingCell: ReusableCell {}
+class TextEditingCell: Reusable {}
 
-extension ImageCollectionViewCell: ReusableCell {}
+extension ImageCollectionViewCell: Reusable {}
 
-extension ReusableCell {
+extension Reusable {
     static var identifire: String {
         return String(describing: self)
     }
 }
 
+// MARK: - Identifire for storyboard
 
+class DocumentNavigationRoot: Reusable {}
