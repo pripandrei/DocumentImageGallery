@@ -62,7 +62,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
     func presentDocument(at documentURL: URL) {
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let documentVC = storyBoard.instantiateViewController(withIdentifier: "DocumentNavMVC")
+        let documentVC = storyBoard.instantiateViewController(withIdentifier: DocumentNavigationRoot.identifire)
         documentVC.modalPresentationStyle = .fullScreen
         
         if let documentVC = documentVC.contents as? ImageGalleryViewController {

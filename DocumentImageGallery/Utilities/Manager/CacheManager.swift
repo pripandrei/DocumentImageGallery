@@ -9,7 +9,11 @@ import UIKit
 
 struct CacheManager
 {
-    let cache = URLCache.shared
+    static var shared = CacheManager()
+    
+    private let cache = URLCache.shared
+    
+    private init() {}
     
     func getImage(fromURL url: URL, complitionHandler: @escaping (UIImage) -> Void)
     {

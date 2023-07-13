@@ -13,7 +13,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     var imageUrl: URL? { didSet { setImage() } }
     
-    var loader = CacheManager()
+    var loader = CacheManager.shared
 }
 
 extension ImageCollectionViewCell

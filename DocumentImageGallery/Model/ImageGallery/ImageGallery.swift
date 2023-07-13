@@ -11,7 +11,7 @@ struct ImageGallery: Codable {
     
     var images = [ImageInfo]()
     
-    struct ImageInfo: Equatable, Codable {
+    struct ImageInfo: Codable {
         
         var cellURL: URL?
         var cellSize: CGSize?
