@@ -53,7 +53,7 @@ struct CacheManager
             guard let data = data, response.statusCode >= 200 && response.statusCode < 300, let image = UIImage(data: data) else {
                 return complitionHandler(.failure(error!))
             }
-            
+
             let cacheData = CachedURLResponse(response: response, data: data)
             self.cache.storeCachedResponse(cacheData, for: request)
             complitionHandler(.success(image))
