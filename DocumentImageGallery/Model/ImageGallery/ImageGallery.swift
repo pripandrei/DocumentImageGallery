@@ -18,7 +18,7 @@ struct ImageGallery: Codable {
         
         var cellAspectRatio: CGSize {
             get {
-                    return cellSize ?? CGSize()
+                return cellSize ?? CGSize()
                 }
             set {
                 let cellWidth = newValue.width
@@ -47,3 +47,5 @@ struct ImageGallery: Codable {
         return try? JSONEncoder().encode(self)
     }
 }
+
+

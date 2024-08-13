@@ -17,6 +17,7 @@ struct CacheManager
     
     func getImage(fromURL url: URL, complitionHandler: @escaping (UIImage) -> Void)
     {
+        let url = url.imageURL
         let request = URLRequest(url: url)
         
         if self.cache.cachedResponse(for: request) != nil {
@@ -33,33 +34,43 @@ struct CacheManager
         }
     }
     
-    func downloadImage(fromURL url: URL, complitionHandler: @escaping (Result<UIImage,Error>) -> Void)
-    {
+    func downloadImage(fromURL url: URL, completionHandler: @escaping (Result<UIImage, Error>) -> Void) {
         let dataTask = URLSession.shared
         let request = URLRequest(url: url)
         
         let _dataTask = dataTask.dataTask(with: request) { data, response, error in
             
             if let error = error {
-                complitionHandler(.failure(error))
+                completionHandler(.failure(error))
                 return
             }
 
             guard let response = response as? HTTPURLResponse else {
-                print("Error: HTTPURLResponse is nil")
+                let responseError = NSError(domain: "DownloadImageErrorDomain", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid response"])
+                completionHandler(.failure(responseError))
                 return
             }
             
-            guard let data = data, response.statusCode >= 200 && response.statusCode < 300, let image = UIImage(data: data) else {
-                return complitionHandler(.failure(error!))
+            guard let data = data,
+                  response.statusCode >= 200 && response.statusCode < 300 else {
+                let statusCodeError = NSError(domain: "DownloadImageErrorDomain", code: response.statusCode, userInfo: [NSLocalizedDescriptionKey: "Invalid status code: \(response.statusCode)"])
+                completionHandler(.failure(statusCodeError))
+                return
+            }
+
+            guard let image = UIImage(data: data) else {
+                let imageError = NSError(domain: "DownloadImageErrorDomain", code: -2, userInfo: [NSLocalizedDescriptionKey: "Failed to create image from data"])
+                completionHandler(.failure(imageError))
+                return
             }
 
             let cacheData = CachedURLResponse(response: response, data: data)
             self.cache.storeCachedResponse(cacheData, for: request)
-            complitionHandler(.success(image))
+            completionHandler(.success(image))
         }
         _dataTask.resume()
     }
+
     
     func loadImageFromCache(withURL url: URL, complitionHandler: @escaping (UIImage) -> Void)
     {

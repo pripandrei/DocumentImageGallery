@@ -20,6 +20,7 @@ class ImageGalleryViewController: UIViewController {
             imageGalleryCollectionView.dropDelegate = self
             imageGalleryCollectionView.dragDelegate = self
             addImageGalleryGestureRecognizers(to: imageGalleryCollectionView)
+            imageGalleryCollectionView.backgroundColor = UIColor(hue: 0.475, saturation: 1, brightness: 0.51, alpha: 1.0)
         }
     }
     
@@ -53,6 +54,7 @@ class ImageGalleryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTrashButton()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -218,7 +220,6 @@ extension ImageGalleryViewController: UICollectionViewDropDelegate {
                     placeHolder.commitInsertion(dataSourceUpdates: { insertionIndexPath in
                         self.imageGallery?.images[destinationIndexPath.item].cellURL = url
                     })
-//                    self.documentChange()
                 }
         })
     }

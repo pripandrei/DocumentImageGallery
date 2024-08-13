@@ -3,4 +3,616 @@
    uuid = "1F76BB09-5563-46CF-A873-9AC3314BD302"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AF80193-F33C-4468-A4D8-BFDFE409DDC0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Model/Document/ImageGalleryDocument.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ImageGalleryDocument"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4AF80193-F33C-4468-A4D8-BFDFE409DDC0 - c37ec5b08a428263"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryDocument.imageGallery.getter : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Model/Document/ImageGalleryDocument.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "4AF80193-F33C-4468-A4D8-BFDFE409DDC0 - 2b27d261fd5940eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryDocument.imageGallery.setter : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Model/Document/ImageGalleryDocument.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4AF80193-F33C-4468-A4D8-BFDFE409DDC0 - 9d83a6cef98f00f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryDocument.imageGallery.modify : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Model/Document/ImageGalleryDocument.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4AF80193-F33C-4468-A4D8-BFDFE409DDC0 - a25932e8c4755077"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryDocument.imageGallery.modify : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "4AF80193-F33C-4468-A4D8-BFDFE409DDC0 - 97c97fe95de83e31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryDocument.init(fileURL: Foundation.URL) -&gt; DocumentImageGallery.ImageGalleryDocument"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Model/Document/ImageGalleryDocument.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08DD048A-FBEB-4FB2-8C96-0C19DB6CD1CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Model/Document/ImageGalleryDocument.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "contents(forType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CD549CF-2197-4171-B1E3-07C85D83C557"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ImageGalleryViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5CD549CF-2197-4171-B1E3-07C85D83C557 - aea18dea320668d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.document.getter : Swift.Optional&lt;DocumentImageGallery.ImageGalleryDocument&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5CD549CF-2197-4171-B1E3-07C85D83C557 - 7ddf767b6acff293"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.document.setter : Swift.Optional&lt;DocumentImageGallery.ImageGalleryDocument&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5CD549CF-2197-4171-B1E3-07C85D83C557 - e389010e14ce580"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.document.modify : Swift.Optional&lt;DocumentImageGallery.ImageGalleryDocument&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5CD549CF-2197-4171-B1E3-07C85D83C557 - e7d99d5d7ebb7073"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.document.modify : Swift.Optional&lt;DocumentImageGallery.ImageGalleryDocument&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5CD549CF-2197-4171-B1E3-07C85D83C557 - d96efdf3a4e088a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DocumentImageGallery.ImageGalleryViewController"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "5CD549CF-2197-4171-B1E3-07C85D83C557 - 9bf86cd62959cc6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DocumentImageGallery.ImageGalleryViewController&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "385CC247-67D3-4307-9EC3-544537DAD41A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ImageGalleryViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "385CC247-67D3-4307-9EC3-544537DAD41A - 8170a4fc14df8dc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.imageGallery.getter : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "385CC247-67D3-4307-9EC3-544537DAD41A - a239f434f845a746"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.imageGallery.setter : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "385CC247-67D3-4307-9EC3-544537DAD41A - d684df8e829f3471"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.imageGallery.modify : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "385CC247-67D3-4307-9EC3-544537DAD41A - a1e7d5ca9f72406d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.imageGallery.modify : Swift.Optional&lt;DocumentImageGallery.ImageGallery&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "385CC247-67D3-4307-9EC3-544537DAD41A - d96efdf3a4e08847"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DocumentImageGallery.ImageGalleryViewController"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "385CC247-67D3-4307-9EC3-544537DAD41A - 9bf86cd62959cc88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageGalleryViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DocumentImageGallery.ImageGalleryViewController&gt;"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6DEED95-A1DF-474D-95D6-4B0D92C9FBE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "331BFADF-8476-4698-94EE-EC8F1348C2FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Model/Document/ImageGalleryDocument.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "load(fromContents:ofType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19606CB9-A080-48A1-8CA5-9ABF97065984"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Controllers/ImageControllers/ImageGalleryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C127C49B-4310-4613-9F08-736E6E609CF5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getImage(fromURL:complitionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C127C49B-4310-4613-9F08-736E6E609CF5 - 2a20737368552d58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.CacheManager.getImage(fromURL: Foundation.URL, complitionHandler: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "C127C49B-4310-4613-9F08-736E6E609CF5 - 2a20737368552d37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.CacheManager.getImage(fromURL: Foundation.URL, complitionHandler: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "C127C49B-4310-4613-9F08-736E6E609CF5 - 2a20737368552d37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.CacheManager.getImage(fromURL: Foundation.URL, complitionHandler: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "376">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1B19A90-71E0-4B5A-B29B-9F0243DF13EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getImage(fromURL:complitionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F1B19A90-71E0-4B5A-B29B-9F0243DF13EB - 2a20737368552d9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.CacheManager.getImage(fromURL: Foundation.URL, complitionHandler: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "F1B19A90-71E0-4B5A-B29B-9F0243DF13EB - 2a20737368552d79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.CacheManager.getImage(fromURL: Foundation.URL, complitionHandler: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "F1B19A90-71E0-4B5A-B29B-9F0243DF13EB - 2a20737368552d79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.CacheManager.getImage(fromURL: Foundation.URL, complitionHandler: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Utilities/Manager/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "469DF669-38E3-43F1-8688-912625D9A23C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Views/ImageCollectionViewCell/ImageCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "setImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "469DF669-38E3-43F1-8688-912625D9A23C - 63b3244e30f62e6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageCollectionViewCell.setImage() -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Views/ImageCollectionViewCell/ImageCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "852">
+               </Location>
+               <Location
+                  uuid = "469DF669-38E3-43F1-8688-912625D9A23C - 3fb703708171e5a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIImage) -&gt; () in DocumentImageGallery.ImageCollectionViewCell.setImage() -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Views/ImageCollectionViewCell/ImageCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "469DF669-38E3-43F1-8688-912625D9A23C - 8716cf0221a5d065"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (__C.UIImage) -&gt; () in DocumentImageGallery.ImageCollectionViewCell.setImage() -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Views/ImageCollectionViewCell/ImageCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DFB3B23-33D1-4642-9B58-4E789A79E1A2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DocumentImageGallery/Supporting Files/Utilities.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetch(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DFB3B23-33D1-4642-9B58-4E789A79E1A2 - 5008e8d2302cc4f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DocumentImageGallery.ImageFetcher.fetch(Foundation.URL) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Supporting%20Files/Utilities.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "2DFB3B23-33D1-4642-9B58-4E789A79E1A2 - 865e8360d6d8f21b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in DocumentImageGallery.ImageFetcher.fetch(Foundation.URL) -&gt; ()"
+                  moduleName = "DocumentImageGallery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrei/Documents/Swift%20learn/DocumentImageGallery/DocumentImageGallery/Supporting%20Files/Utilities.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

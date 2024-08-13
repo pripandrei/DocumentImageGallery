@@ -33,5 +33,4 @@ class ImageGalleryDocument: UIDocument {
         }
         return attributes
     }
-    
 }
